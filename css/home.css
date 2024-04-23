@@ -1,0 +1,785 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Farsan&family=Honk&family=Jersey+10+Charted&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Farsan&family=Honk&family=Jersey+10+Charted&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Farsan&family=Honk&family=Jersey+10+Charted&family=Seymour+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Big+Shoulders+Text:wght@100..900&family=Farsan&family=Honk&family=Jersey+10+Charted&family=Seymour+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Big+Shoulders+Text:wght@100..900&family=Farsan&family=Honk&family=Jersey+10+Charted&family=Seymour+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Big+Shoulders+Text:wght@100..900&family=Farsan&family=Honk&family=Jersey+10+Charted&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Seymour+One&display=swap');
+
+
+
+
+
+:root {
+    --white:white;
+    --whitesmoke:whitesmoke;
+    --black:black;
+    --green:green;
+    --red:red;
+    --lightgreen:lightgreen;
+    --darkGreen:darkgreen;
+    --slateGrey:slategrey;
+    --lightgrey:lightgrey;
+    --darkGrey:darkgrey;
+    --fontSize: 1rem
+}
+
+
+
+body {
+    margin:0;
+    overflow-x: hidden;
+
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+/*--------------------------------------------NAVBAR CONTAINER--------------------------------------------------------------- */
+
+
+.Navbar-Container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-image: linear-gradient(white, green);
+    width: 100%;
+    height: 70px;
+    margin:0;
+    transition: 1.3s linear;
+}
+
+
+
+
+.Navbar-Container .content {
+    color:var(--red);
+    font-size: 1.8vw
+}
+
+
+.nav-pizza-icon {
+    font-size: 1.8rem;
+    color:var(--red);
+   
+}
+
+
+
+
+.Navbar-Container .content-two a {
+    color:var(--slateGrey);
+    font-weight: bold;
+    text-decoration: none;
+    margin:0px 20px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(0.9rem, 2vw, 1rem)
+}
+
+.Navbar-Container .content-two a.home,
+.Navbar-Container .content-two a.home:hover
+ {
+    color:var(--white);
+    cursor:auto
+}
+
+.Navbar-Container .content-two a:hover {
+    color:var(--white);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------MAIN CONTENT-------------------------------------------------------------- */
+
+.page-content {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    margin-block-start: 40px;
+}
+
+
+.page-content .content {
+    flex:0 0 500px;
+    width: 700px;
+    font-family: "Amatic SC", sans-serif;
+    color:var(--black);
+    font-style: normal;
+    font-size: clamp(1rem, 1.8vw, 2rem);
+  
+   
+}
+
+.page-content .content img {
+    object-fit: cover;
+    border-radius: 7px;
+    width: 700px;
+    height: 300px;
+}
+
+.page-content .content p {
+    font-family: "Farsan", cursive;
+    font-weight: 400;
+     font-style: normal;
+     width: 700px;
+}
+
+.page-content .accordion {
+    margin-left: -410px;
+    border:none;
+    outline:none;
+    font-family: "Seymour One", sans-serif;
+    font-size: clamp(1rem, 1vw, 0.8rem);
+    background-image: linear-gradient(red, green);
+    color:var(--white);
+    border-radius: 10px;
+    width: 310px;
+    text-align: center;
+    padding:0.9em 1em
+}
+
+
+
+.page-content .accordion-content {
+    margin-left: -310px;
+}
+
+.accordion-content {
+    display: none;
+    overflow: hidden;
+    
+}
+
+
+
+.page-content .accordion-content p {
+    font-family: "Big Shoulders Text", sans-serif;
+    font-size: 1.1rem;
+}
+
+
+/*------created new active class */
+.active, .accordion:hover {
+    background-color:green
+}
+
+
+
+
+
+
+
+
+
+
+.page-content .content-two {
+    flex:0 0 500px;
+    width: 700px;
+    font-family: "Amatic SC", sans-serif;
+    color:var(--black);
+    font-style: normal;
+    font-size: clamp(1rem, 1.8vw, 2rem);
+}
+
+.page-content .content-two img {
+    object-fit: cover;
+    border-radius:7px;
+    width:700px;
+    height: 300px;
+}
+
+.page-content .content-two p {
+    font-family: "Farsan", cursive;
+    font-weight: 400;
+     font-style: normal;
+     width: 700px;
+}
+
+.page-content .accordion-two {
+    margin-left: -410px;
+    border:none;
+    outline:none;
+    font-family: "Seymour One", sans-serif;
+    font-size: clamp(1rem, 1vw, 0.8rem);
+    background-image: linear-gradient(red, green);
+    color:var(--white);
+    border-radius: 10px;
+    width: 310px;
+    text-align: center;
+    padding:0.9em 1em
+}
+
+.accordion-content-two {
+    display: none;
+    margin-left: -310px;
+}
+
+
+.page-content .accordion-content-two p {
+    font-family: "Big Shoulders Text", sans-serif;
+    font-size: 1.1rem;
+}
+
+
+/*------created new active class */
+.activeTwo, .accordion-two:hover {
+    background-color:var(--green)
+}
+
+
+
+
+
+
+
+
+
+
+.page-content .content-three {
+    flex:0 0 500px;
+    width: 700px;
+    font-family: "Amatic SC", sans-serif;
+    color:var(--black);
+    font-style: normal;
+    font-size: clamp(1rem, 1.8vw, 2rem);
+}
+
+
+.page-content .content-three img {
+    object-fit: cover;
+    border-radius:7px;
+    width: 700px;
+    height:300px
+}
+
+.page-content .content-three  p {
+    font-family: "Farsan", cursive;
+    font-weight: 400;
+     font-style: normal;
+     width: 700px;
+}
+
+ 
+.page-content .accordion-three {
+    margin-left: -410px;
+    border:none;
+    outline:none;
+    font-family: "Seymour One", sans-serif;
+    font-size: clamp(1rem, 1vw, 0.8rem);
+    background-image: linear-gradient(red, green);
+    color:var(--white);
+    border-radius: 10px;
+    width: 310px;
+    text-align: center;
+    padding:0.9em 1em
+}
+
+.accordion-content-three {
+    display: none;
+    margin-left: -310px;
+}
+
+
+.page-content .accordion-content-three p {
+    font-family: "Big Shoulders Text", sans-serif;
+    font-size: 1.1rem;
+}
+
+/*------created new active class */
+.activeThree, .accordionThree:hover {
+    background-color:var(--darkGreen)
+}
+
+
+
+
+
+
+
+
+
+
+.page-content .content-four {
+    flex: 0 0 500px;
+    width: 700px;
+    font-family: "Amatic SC", sans-serif;
+    color:var(--black);
+    font-style: normal;
+    font-size: clamp(1rem, 1.8vw, 2rem);
+}
+
+
+.page-content .content-four img {
+    width: 700px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.page-content .content-four p {
+      font-family: "Farsan", cursive;
+    font-weight: 400;
+     font-style: normal;
+     width: 700px;
+}
+
+.page-content .accordion-four {
+    margin-left: -410px;
+    border:none;
+    outline:none;
+    font-family: "Seymour One", sans-serif;
+    font-size: clamp(1rem, 1vw, 0.8rem);
+    background-image: linear-gradient(red, green);
+    color:var(--white);
+    border-radius: 10px;
+    width: 310px;
+    text-align: center;
+    padding:0.9em 1em
+}
+
+.accordion-content-four {
+    display: none;
+    margin-left: -200px
+}
+
+.page-content .accordion-content-four p {
+    font-family: "Big Shoulders Text", sans-serif;
+    font-size: 1.1rem;
+}
+
+
+ /*------created new active class */
+.activeFour , .accordion-four:hover {
+    background-color:var(--green)
+}
+
+
+
+
+.page-content .content-five {
+    flex: 0 0 500px;
+    width: 700px;
+    font-family: "Amatic SC", sans-serif;
+    color:var(--black);
+    font-style: normal;
+    font-size: clamp(1rem, 1.8vw, 2rem);
+}
+
+
+.page-content .content-five img {
+    object-fit: cover;
+    border-radius:7px;
+    width: 700px;
+    height: 300px;
+}
+
+
+
+.page-content .content-five p {
+    font-family: "Farsan", cursive;
+    font-weight: 400;
+     font-style: normal;
+     width: 700px;
+}
+
+
+.page-content .accordion-five {
+    margin-left: -410px;
+    border:none;
+    outline:none;
+    font-family: "Seymour One", sans-serif;
+    font-size: clamp(1rem, 1vw, 0.8rem);
+    background-image: linear-gradient(red, green);
+    color:var(--white);
+    border-radius: 10px;
+    width: 310px;
+    text-align: center;
+    padding:0.9em 1em
+}
+
+
+.page-content .accordion-content-five p {
+    font-family: "Big Shoulders Text", sans-serif;
+    font-size: 1.1rem;
+}
+
+.accordion-content-five {
+    display: none;
+    margin-left: -350px;
+}
+
+
+/*------created new active class */
+
+.activeFive, .accordion-five:hover {
+    background-color:var(--green)
+}
+
+
+
+.page-content .content-six {
+    flex: 0 0 335px;
+    width: 100%;
+    margin-block: 110px;
+    background-color:white;
+    border-radius:3px;
+ 
+
+}
+
+
+.content-six-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+
+.page-content .content-six .content-six-content h3 {
+    font-size: 3rem;
+    background-image: url(/images/veggiepizza.jpg);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent
+}
+
+
+
+.page-content .content-six .content-six-content h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-image:url(/images/statueofliberty.jpg);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent
+}
+
+.page-content .content-six .content-six-content .plant-icon-content {
+    font-size: 2rem;
+    color:var(--green)
+}
+
+
+
+.content-six-content img {
+    width: 300px;
+    object-fit: contain;
+}
+
+
+
+.plant-icon-content {
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------FOOTER--------------------------------------------------------------- */
+
+
+.content-footer {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    background-color:white;
+    border-radius:7px
+}
+
+
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    align-items:baseline;
+    justify-content: space-around
+
+}
+
+.footer-content  div {
+    font-size: 1.1rem;
+    color:black;
+    font-weight: bold;
+}
+
+
+.footer-content-two .footer-text {
+    color:green;
+    font-weight: bold;
+    
+}
+
+
+
+
+.footer-content h3 {
+    font-family: "Farsan", cursive;
+}
+
+.footer-content p {
+    font-family: "Big Shoulders Text", sans-serif;
+}
+
+
+
+.footer-content .instagram-footer {
+    color:pink;
+    font-weight: bold;
+    font-size: 1.3rem;
+    
+}
+
+
+.footer-content .facebook-footer {
+    color:dodgerblue;
+    font-weight: bold;
+    font-size: 1.3rem;
+    
+    
+}
+
+.footer-content .youtube-footer {
+    color:red;
+    font-weight: bold;
+    font-size: 1.3rem;
+    
+}
+
+
+
+.content-footer-two {
+    position: relative;
+    bottom:0px;
+    background-color:whitesmoke;
+    width: 100%;
+    height: 105px;
+}
+
+.footer-content-three {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+    height: 100px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------MOBILE SCREENS 480px--------------------------------------------------------------- */
+
+
+
+
+ @media screen and (max-width: 480px) {
+    
+        .Navbar-Container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 100%;
+            height: 12vh;
+            font-size: 0.5rem;
+        }
+        
+        .Navbar-Container .content {
+            font-size: 5vw;
+        }
+
+        .nav-pizza-icon {
+            display: none;
+        }
+
+        .Navbar-Container .content-two a.home {
+            font-size: 1rem;
+        }
+
+        
+        .Navbar-Container .content-two a.home:focus,
+        .Navbar-Container .content-two a.home:hover {
+            color:var(--slateGrey)
+        }
+        
+
+
+        .Navbar-Container .content-two .link {
+            display: none;
+        }
+
+        .page-content .content h3 {
+            text-align: center;
+        }
+
+        .page-content .content img {
+            width: 700px;
+            object-fit: fill;
+        }
+
+        .page-content .content p {
+            display: none;
+        }
+
+        .page-content .accordion {
+            display: none;
+            
+        }
+
+        .page-content .content-two {
+            margin-top: -110px;
+        }
+
+        .page-content .content-two img {
+            width: 700px;
+            object-fit: fill;
+        }
+
+        .page-content .content-two h3 {
+            text-align: center;
+        }
+
+        .page-content .content-two p {
+            display: none;
+        }
+
+        .page-content .accordion-two {
+            display: none;
+        }
+
+        .page-content .content-three {
+            margin-top: -110px;
+        }
+
+        .page-content .content-three h3 {
+            text-align: center;
+        }
+
+        .page-content .content-three  img {
+            width: 700px;
+            object-fit: fill;
+        }
+
+        .page-content .content-three p {
+            display: none;
+        }
+
+        .page-content .accordion-three {
+            display: none;
+        }
+
+        .page-content .content-four {
+            margin-top: -110px;
+        }
+
+        .page-content .content-four h3 {
+            text-align: center;
+        }
+
+        .page-content .content-four p {
+            display: none;
+        }
+
+        .page-content .content-four img {
+            width: 700px;
+            object-fit: fill;
+        }
+
+        .page-content .accordion-four {
+            display: none;
+        }
+
+        .page-content .content-five {
+            margin-top: -110px;
+        }
+
+        .page-content .content-five h3 {
+            text-align: center;
+        }
+
+        .page-content .content-five img {
+            width: 700px;
+            object-fit: fill;
+        }
+
+        .page-content .content-five p {
+            display: none;
+        }
+
+        .page-content .accordion-five {
+            display: none;
+        }
+
+        .content-six-content {
+            display: flex;
+            flex-direction: column;
+            margin-block: -110px;
+        }
+        
+        .content-six-content h4 {
+            display: none;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items:baseline;
+            justify-content: center;
+        }
+
+        .footer-content-two  {
+            font-weight: normal;
+        }
+
+        .footer-content-two p {
+            font-size:0.9rem
+        }
+
+        .footer-content-three  {
+            font-size:0.9rem
+        }
+
+ }
